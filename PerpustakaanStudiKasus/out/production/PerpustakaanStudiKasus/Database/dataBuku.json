@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "posisiRak": "",
+    "namaBuku": "",
+    "penulis": "",
+    "tahun": 0,
+    "stok": 0,
+    "jumlahHalaman": 0,
+    "penerbit": ""
+  },
+  {
+    "id": 1,
+    "posisiRak": "A1",
+    "namaBuku": "Harry Potter",
+    "penulis": "J. K. Rowling",
+    "tahun": 1997,
+    "stok": 3,
+    "jumlahHalaman": 384,
+    "penerbit": "J. K. Rowling"
+  },
+  {
+    "id": 2,
+    "posisiRak": "D3",
+    "namaBuku": "The Catcher in the Rye",
+    "penulis": "J.D. Salinger",
+    "tahun": 1951,
+    "stok": 6,
+    "jumlahHalaman": 329,
+    "penerbit": "Little, Brown and Company"
+  },
+  {
+    "id": 3,
+    "posisiRak": "B4",
+    "namaBuku": "1984",
+    "penulis": "George Orwell",
+    "tahun": 1949,
+    "stok": 5,
+    "jumlahHalaman": 240,
+    "penerbit": "Secker \u0026 Walburg"
+  },
+  {
+    "id": 4,
+    "posisiRak": "E4",
+    "namaBuku": "The Great Gatsby",
+    "penulis": "F.Scott.Fitzgerald",
+    "tahun": 1925,
+    "stok": 8,
+    "jumlahHalaman": 350,
+    "penerbit": "Charles Scribner\u0027s Sons"
+  },
+  {
+    "id": 5,
+    "posisiRak": "A3",
+    "namaBuku": "Harry Potter and the Sorcerer\u0027s Stone",
+    "penulis": "J.K. Rowling",
+    "tahun": 1997,
+    "stok": 5,
+    "jumlahHalaman": 365,
+    "penerbit": "Bloomsbury"
+  }
+]

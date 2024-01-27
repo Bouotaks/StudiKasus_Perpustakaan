@@ -1,0 +1,26 @@
+[
+  {
+    "lamaPinjam": 0,
+    "idPinjam": 0,
+    "biaya": 0,
+    "idBuku": 0
+  },
+  {
+    "lamaPinjam": 5,
+    "idPinjam": 1,
+    "biaya": 25000,
+    "idBuku": 2
+  },
+  {
+    "lamaPinjam": 4,
+    "idPinjam": 3,
+    "biaya": 20000,
+    "idBuku": 5
+  },
+  {
+    "lamaPinjam": 8,
+    "idPinjam": 4,
+    "biaya": 40000,
+    "idBuku": 4
+  }
+]
