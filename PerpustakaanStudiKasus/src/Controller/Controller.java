@@ -128,20 +128,7 @@ public class Controller {
         modelpinjaman.kembalikanBuku(idPinjam);
     }
 
-//    public void cetakDetailPeminjaman() {
-//        ArrayList<NodePinjaman> listPinjaman = modelpinjaman.getDetailPinjaman();
-//        System.out.println("===== DETAIL PEMINJAMAN =====");
-//        for (int i = 0; i < listPinjaman.size(); i++) {
-//            NodePinjaman pinjaman = listPinjaman.get(i);
-//            NodeBuku buku = modelbuku.getbuku(pinjaman.getBukuId());
-//
-//            System.out.println("ID Peminjaman: " + i);
-//            System.out.println("Judul Buku: " + buku.getNamaBuku());
-//            System.out.println("Lama Peminjaman: " + pinjaman.getLamaPinjam());
-//            System.out.println("Biaya Peminjaman: " + pinjaman.getBiaya());
-//            System.out.println("==============================");
-//        }
-//    }
+
 
     public void cekLogin() {
         input.nextLine();
@@ -193,7 +180,7 @@ public class Controller {
                     break;
                 }
                 case 5: {
-                    //cetakDetailPeminjaman();
+                    modelpinjaman.cekDetailPinjaman(modelpinjaman, modelbuku);
                     break;
                 }
                 case 6: {

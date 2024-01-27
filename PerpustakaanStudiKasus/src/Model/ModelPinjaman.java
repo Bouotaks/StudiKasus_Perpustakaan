@@ -53,6 +53,30 @@ public class ModelPinjaman {
         return PINJAMAN;
     }
 
+    public void cekDetailPinjaman(ModelPinjaman modelPinjaman, ModelBuku modelBuku) {
+        ArrayList<NodePinjaman> listPinjaman = modelPinjaman.getListPinjaman();
+
+        System.out.println("===== DETAIL PEMINJAMAN =====");
+        for (NodePinjaman pinjaman : listPinjaman) {
+            System.out.println("ID Pinjam: " + pinjaman.getIdPinjam());
+            System.out.println("ID Buku: " + pinjaman.getIdBuku());
+            System.out.println("Lama Pinjam: " + pinjaman.getLamaPinjam());
+            System.out.println("Biaya: " + pinjaman.getBiaya());
+
+            NodeBuku buku = modelBuku.getbuku(pinjaman.getIdBuku());
+            if (buku != null) {
+                System.out.println("Buku yang dipinjam:");
+                System.out.println("  Judul Buku: " + buku.getNamaBuku());
+                System.out.println("  Penulis: " + buku.getPenulis());
+                System.out.println("  Tahun Terbit: " + buku.getTahun());
+                System.out.println("  Stok: " + buku.getStok());
+                System.out.println("  Jumlah Halaman: " + buku.getJumlahHalaman());
+                System.out.println("  Posisi Rak: " + buku.getPosisiRak());
+            }
+            System.out.println("=============================");
+        }
+    }
+
     public void kembalikanBuku(int idPinjam) {
         NodePinjaman pinjaman = getPinjaman(idPinjam);
         NodeBuku buku = modelbuku.getbuku(pinjaman.getIdBuku());
