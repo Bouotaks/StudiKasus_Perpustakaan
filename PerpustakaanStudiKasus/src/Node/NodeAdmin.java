@@ -1,8 +1,8 @@
 package Node;
 
-public class NodeAdmin {
-    String username;
-    String password;
+public abstract class NodeAdmin {
+    protected String username;
+    protected String password;
 
     public NodeAdmin() {
         this.username = "dean";
@@ -13,15 +13,9 @@ public class NodeAdmin {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public abstract boolean login(String username, String password);
 }

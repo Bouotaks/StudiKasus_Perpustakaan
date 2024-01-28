@@ -11,7 +11,6 @@ public class NodeBuku {
     String penerbit;
 
 
-
     public NodeBuku(int id, String nama, String penulis,String penerbit, int tahun, int stok, int jumlahHalaman, String posisiRak){
         this.id = id;
         this.stok = stok;
@@ -23,20 +22,12 @@ public class NodeBuku {
         this.jumlahHalaman = jumlahHalaman;
     }
 
-    public String getPenerbit() {
-        return penerbit;
-    }
-
     public void setPenerbit(String penerbit) {
         this.penerbit = penerbit;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getPosisiRak() {

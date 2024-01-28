@@ -11,11 +11,10 @@ public class ModelPinjaman {
 
     private ArrayList<NodePinjaman> listPinjaman;
     private final ModelJSON<NodePinjaman> modelJSON;
-    public int idPinjam = 0;
 
     public ModelPinjaman(ModelBuku modelbuku){
         this.modelbuku = modelbuku;
-        listPinjaman = new ArrayList<NodePinjaman>();
+        listPinjaman = new ArrayList<>();
         modelJSON = new ModelJSON<NodePinjaman>("src\\Database\\pinjaman.json");
         loadPinjaman();
     }
@@ -89,9 +88,5 @@ public class ModelPinjaman {
         } else {
             System.out.println("Gagal mengembalikan buku. ID buku tidak valid");
         }
-    }
-
-    public ArrayList<NodePinjaman> getDetailPinjaman() {
-        return listPinjaman;
     }
 }

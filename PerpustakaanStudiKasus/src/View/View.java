@@ -26,25 +26,15 @@ public class View {
             pilihan = input.nextInt();
             System.out.println("=======================");
 
-            switch (pilihan){
-                case 1:{
-                  controller.cekLogin();
-                  break;
-                }
-                case 2:{
-                    controller.menuPelanggan();
-                    break;
-                }
-                case 3:{
+            switch (pilihan) {
+                case 1 -> controller.cekLogin();
+                case 2 -> controller.menuPelanggan();
+                case 3 -> {
                     System.out.println("TERIMAKASIH SUDAH MENGGUNAKAN PERPUSTAKAAN KAMI");
                     System.out.println("             DATANGLAH KEMBALI                 ");
                     System.exit(0);
-                    break;
                 }
-                default:{
-                    System.out.println("INPUT ERROR");
-                    break;
-                }
+                default -> System.out.println("INPUT ERROR");
             }
         } while (true);
     }

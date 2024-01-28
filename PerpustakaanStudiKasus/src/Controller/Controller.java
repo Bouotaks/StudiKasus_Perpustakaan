@@ -1,8 +1,6 @@
 package Controller;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-
 import Model.ModelAdmin;
 import Model.ModelBuku;
 import Model.ModelPinjaman;
@@ -128,8 +126,6 @@ public class Controller {
         modelpinjaman.kembalikanBuku(idPinjam);
     }
 
-
-
     public void cekLogin() {
         input.nextLine();
         System.out.println("      LOGIN      ");
@@ -163,33 +159,13 @@ public class Controller {
             System.out.println("===========================");
 
             switch (pilihan1) {
-                case 1: {
-                    inputBuku();
-                    break;
-                }
-                case 2: {
-                    hapusBuku();
-                    break;
-                }
-                case 3: {
-                    updateBuku();
-                    break;
-                }
-                case 4: {
-                    modelbuku.lihatSemuaBuku();
-                    break;
-                }
-                case 5: {
-                    modelpinjaman.cekDetailPinjaman(modelpinjaman, modelbuku);
-                    break;
-                }
-                case 6: {
-                    break;
-                }
-                default: {
-                    System.out.println("INPUT ERROR");
-                    break;
-                }
+                case 1 -> inputBuku();
+                case 2 -> hapusBuku();
+                case 3 -> updateBuku();
+                case 4 -> modelbuku.lihatSemuaBuku();
+                case 5 -> modelpinjaman.cekDetailPinjaman(modelpinjaman, modelbuku);
+                case 6 -> {}
+                default -> System.out.println("INPUT ERROR");
             }
         } while (pilihan1 != 6);
     }
@@ -208,22 +184,11 @@ public class Controller {
             pilihan2 = input.nextInt();
             System.out.println("========================");
 
-            switch (pilihan2){
-                case 1:{
-                    cariBuku();
-                    break;
-                }
-                case 2:{
-                    pinjamBuku();
-                    break;
-                }
-                case 3:{
-                    kembalikanBuku();
-                    break;
-                }
-                case 4:{
-                    break;
-                }
+            switch (pilihan2) {
+                case 1 -> cariBuku();
+                case 2 -> pinjamBuku();
+                case 3 -> kembalikanBuku();
+                case 4 -> {}
             }
         }while(pilihan2 != 4);
     }

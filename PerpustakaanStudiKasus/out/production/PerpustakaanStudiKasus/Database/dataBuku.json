@@ -15,7 +15,7 @@
     "namaBuku": "Harry Potter",
     "penulis": "J. K. Rowling",
     "tahun": 1997,
-    "stok": 3,
+    "stok": 2,
     "jumlahHalaman": 384,
     "penerbit": "J. K. Rowling"
   },
@@ -55,7 +55,7 @@
     "namaBuku": "Harry Potter and the Sorcerer\u0027s Stone",
     "penulis": "J.K. Rowling",
     "tahun": 1997,
-    "stok": 5,
+    "stok": 6,
     "jumlahHalaman": 365,
     "penerbit": "Bloomsbury"
   }

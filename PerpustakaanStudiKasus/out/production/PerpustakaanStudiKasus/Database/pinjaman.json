@@ -12,15 +12,15 @@
     "idBuku": 2
   },
   {
-    "lamaPinjam": 4,
-    "idPinjam": 3,
-    "biaya": 20000,
-    "idBuku": 5
-  },
-  {
     "lamaPinjam": 8,
     "idPinjam": 4,
     "biaya": 40000,
     "idBuku": 4
+  },
+  {
+    "lamaPinjam": 5,
+    "idPinjam": 5,
+    "biaya": 25000,
+    "idBuku": 1
   }
 ]

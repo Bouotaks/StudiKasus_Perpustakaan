@@ -4,18 +4,16 @@ import com.google.gson.reflect.TypeToken;
 import ModelJSON.ModelJSON;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import Node.NodeBuku;
-import org.w3c.dom.Node;
 
 public class ModelBuku{
     public ArrayList<NodeBuku> bukuList;
-    int id = 0;
+
     Scanner input = new Scanner(System.in);
     private final ModelJSON<NodeBuku> modelJSON;
 
     public ModelBuku() {
-        bukuList = new ArrayList<NodeBuku>();
+        bukuList = new ArrayList<>();
         modelJSON = new ModelJSON<NodeBuku>("src\\Database\\dataBuku.json");
         loadBuku();
     }
@@ -26,10 +24,6 @@ public class ModelBuku{
 
     public void commit(){
         modelJSON.writeToFile(bukuList);
-    }
-
-    public void addBuku(NodeBuku nodeBuku){
-        bukuList.add(nodeBuku);
     }
 
     public boolean updateBuku(int id, String nama, String penulis, String penerbit, int tahun, int stok, int jumlahHalaman, String posisiRak) {
@@ -64,10 +58,6 @@ public class ModelBuku{
             }
         }
         return BUKU;
-    }
-
-    public ArrayList<NodeBuku>getListBuku(){
-        return bukuList;
     }
 
     public void tambahBuku(String nama, String penulis,String penerbit, int tahun, int stok, int jumlahHalaman, String posisiRak){
